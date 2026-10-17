@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColdPack Logistics — Empaques & Cadena de Frío para el Agro</title>
+  <meta name="description" content="Especialistas en diseño de empaques, embalajes y cadena de frío para transporte de mercancías agrícolas. Protegemos tu cosecha del campo a la mesa.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='url(%23g)'/%3E%3Cpath d='M12 28V16l8-6 8 6v12H12z' stroke='%23fff' stroke-width='2' fill='none'/%3E%3Cpath d='M20 14v8M16 18h8' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='40' y2='40'%3E%3Cstop stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="url(#logoGrad)"/>
+          <path d="M12 28V16l8-6 8 6v12H12z" stroke="#fff" stroke-width="2" fill="none"/>
+          <path d="M20 14v8M16 18h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#0ea5e9"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+        </svg>
+        <span class="logo-text">Cold<strong>Pack</strong></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#materiales">Materiales</a></li>
+        <li><a href="#cifras">Cifras</a></li>
+        <li><a href="#contacto" class="btn-nav">Contáctenos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">🌿 Especialistas en Cadena de Frío Agrícola</div>
+      <h1 class="hero-title">
+        Protegemos tu cosecha<br>
+        <span class="gradient-text">del campo a la mesa</span>
+      </h1>
+      <p class="hero-subtitle">
+        Diseñamos empaques y embalajes de alta ingeniería para el transporte seguro de productos agrícolas perecederos. Tecnología de cadena de frío que preserva frescura, calidad y valor comercial.
+      </p>
+      <div class="hero-actions">
+        <a href="#servicios" class="btn btn-primary">
+          Explorar servicios
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-4-4 4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contacto" class="btn btn-outline">Solicitar cotización</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="12">0</span><span class="hero-stat-suffix">+</span>
+          <span class="hero-stat-label">Años de experiencia</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="350">0</span><span class="hero-stat-suffix">+</span>
+          <span class="hero-stat-label">Clientes activos</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="98">0</span><span class="hero-stat-suffix">%</span>
+          <span class="hero-stat-label">Entregas a temperatura</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#nosotros" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m-6-6 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- NOSOTROS -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quiénes Somos</span>
+        <h2 class="section-title">Ingeniería logística al servicio del <span class="gradient-text">agro latinoamericano</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card about-mission reveal">
+          <div class="about-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/><path d="M24 12v12l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Nuestra Misión</h3>
+          <p>Garantizar la preservación integral de productos agrícolas perecederos mediante soluciones de empaque, embalaje y cadena de frío que cumplan estándares internacionales de calidad, reduciendo pérdidas postcosecha y maximizando el valor comercial para productores y exportadores.</p>
+        </div>
+        <div class="about-card about-vision reveal">
+          <div class="about-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M2 24s8-14 22-14 22 14 22 14-8 14-22 14S2 24 2 24z" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Nuestra Visión</h3>
+          <p>Ser la empresa de referencia en Latinoamérica en ingeniería de empaques con cadena de frío para el sector agro, reconocida por nuestra innovación en materiales sostenibles, tecnología de monitoreo térmico y compromiso con la seguridad alimentaria.</p>
+        </div>
+        <div class="about-card about-values reveal">
+          <div class="about-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Nuestros Valores</h3>
+          <p><strong>Calidad:</strong> Cumplimiento de normativas HACCP e ISO 22000.<br>
+          <strong>Innovación:</strong> Materiales y tecnologías de vanguardia.<br>
+          <strong>Sostenibilidad:</strong> Empaques reciclables y biodegradables.<br>
+          <strong>Confianza:</strong> Transparencia y trazabilidad total.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section section-alt" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros Servicios</span>
+        <h2 class="section-title">Soluciones integrales para la <span class="gradient-text">logística del frío</span></h2>
+        <p class="section-desc">Cada producto agrícola tiene requerimientos únicos de temperatura, humedad y ventilación. Diseñamos soluciones a medida basadas en los principios de la gestión logística moderna.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none"><rect x="8" y="14" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2"/><path d="M8 22h40M20 14v-4M36 14v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 30l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Diseño de Empaques Primarios</h3>
+          <p>Desarrollo de envases en contacto directo con el producto agrícola: bolsas con atmósfera modificada (MAP), films retráctiles, bandejas termoformadas y envases con control de etileno. Seleccionamos materiales según las características fisiológicas de cada fruto u hortaliza.</p>
+          <ul class="service-features">
+            <li>Atmósfera modificada y controlada</li>
+            <li>Control de permeabilidad al O₂ y CO₂</li>
+            <li>Materiales aptos para contacto alimentario</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none"><path d="M10 42V18l18-8 18 8v24l-18 8-18-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 18l18 8 18-8M28 26v24" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Embalajes Secundarios y Terciarios</h3>
+          <p>Diseño de cajas de cartón corrugado con ventilación calibrada, contenedores plásticos reutilizables, bins y pallets configurados para maximizar la eficiencia del pre-enfriamiento. Cada diseño considera las cargas estáticas y dinámicas del transporte.</p>
+          <ul class="service-features">
+            <li>Cartón corrugado con ventilación optimizada</li>
+            <li>Contenedores retornables y reutilizables</li>
+            <li>Paletización según normas ISO 3394</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none"><rect x="6" y="20" width="44" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M28 12v8M20 16l8-4 8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="32" r="4" stroke="currentColor" stroke-width="2"/><circle cx="38" cy="32" r="4" stroke="currentColor" stroke-width="2"/><path d="M22 32h12" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Gestión de Cadena de Frío</h3>
+          <p>Planificación completa de la cadena de frío desde la cosecha hasta el punto de venta: pre-enfriamiento (hydrocooling, forced-air cooling, vacuum cooling), transporte refrigerado, almacenamiento en cámaras frigoríficas y monitoreo continuo con sensores IoT.</p>
+          <ul class="service-features">
+            <li>Protocolos de pre-enfriamiento por producto</li>
+            <li>Monitoreo IoT de temperatura en tiempo real</li>
+            <li>Coordinación de transporte multimodal</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none"><path d="M28 8v40M8 28h40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="28" cy="28" r="18" stroke="currentColor" stroke-width="2"/><path d="M16 16l24 24M40 16L16 40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".3"/></svg>
+          </div>
+          <h3>Consultoría en Normativas</h3>
+          <p>Asesoría para cumplimiento de regulaciones nacionales e internacionales: normativas HACCP, BPA (Buenas Prácticas Agrícolas), protocolos GlobalG.A.P., normas fitosanitarias para exportación y requisitos de etiquetado según mercado destino.</p>
+          <ul class="service-features">
+            <li>Certificación HACCP e ISO 22000</li>
+            <li>Cumplimiento GlobalG.A.P.</li>
+            <li>Requisitos fitosanitarios por país</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">05</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none"><path d="M14 44V22a14 14 0 0128 0v22" stroke="currentColor" stroke-width="2"/><path d="M10 44h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="28" cy="22" r="6" stroke="currentColor" stroke-width="2"/><path d="M28 16v-4M22 22h-4M34 22h4M24 18l-2-2M32 18l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Ingeniería de Materiales</h3>
+          <p>Investigación y selección de materiales de empaque: espumas de poliuretano, poliestireno expandido (EPS), gel refrigerante, materiales con cambio de fase (PCM), aislantes multicapa y nuevas soluciones biodegradables a base de almidón y fibra natural.</p>
+          <ul class="service-features">
+            <li>Materiales con cambio de fase (PCM)</li>
+            <li>Aislantes térmicos de alto rendimiento</li>
+            <li>Alternativas biodegradables certificadas</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">06</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 56 56" fill="none"><rect x="8" y="8" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/><path d="M8 20h40M20 8v40" stroke="currentColor" stroke-width="2"/><path d="M28 28l6 4M28 28l-2 6M28 28l4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Trazabilidad y Monitoreo</h3>
+          <p>Implementación de sistemas de trazabilidad completa: sensores de temperatura y humedad con transmisión en la nube, registros RFID, códigos QR para seguimiento en tiempo real y dashboards de control para toda la cadena logística.</p>
+          <ul class="service-features">
+            <li>Sensores IoT con alertas automáticas</li>
+            <li>Dashboard de monitoreo 24/7</li>
+            <li>Reportes de conformidad térmica</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Cómo Trabajamos</span>
+        <h2 class="section-title">Un proceso diseñado para <span class="gradient-text">cero pérdidas</span></h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step reveal">
+          <div class="process-dot"></div>
+          <div class="process-content">
+            <span class="process-label">Paso 1</span>
+            <h3>Diagnóstico del Producto</h3>
+            <p>Analizamos las características fisiológicas del producto: tasa de respiración, sensibilidad al etileno, temperatura óptima de almacenamiento, humedad relativa requerida y vida útil esperada.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-dot"></div>
+          <div class="process-content">
+            <span class="process-label">Paso 2</span>
+            <h3>Diseño de la Solución</h3>
+            <p>Nuestro equipo de ingeniería desarrolla el empaque, embalaje y protocolo de frío personalizado. Se realizan simulaciones de estrés térmico y mecánico para validar el diseño.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-dot"></div>
+          <div class="process-content">
+            <span class="process-label">Paso 3</span>
+            <h3>Pruebas y Validación</h3>
+            <p>Ensayos de laboratorio con productos reales: pruebas de vibración, compresión, impacto y ciclos térmicos que simulan las condiciones reales de transporte terrestre, marítimo y aéreo.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-dot"></div>
+          <div class="process-content">
+            <span class="process-label">Paso 4</span>
+            <h3>Implementación</h3>
+            <p>Producción de los empaques, capacitación al personal en el manejo correcto, instalación de sensores IoT y puesta en marcha del sistema de monitoreo en tiempo real.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-dot"></div>
+          <div class="process-content">
+            <span class="process-label">Paso 5</span>
+            <h3>Seguimiento Continuo</h3>
+            <p>Acompañamiento postventa con análisis de datos de cada envío, reportes de desempeño térmico y mejora continua del sistema basada en indicadores clave (KPI).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALES -->
+  <section class="section section-alt" id="materiales">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Materiales & Tecnología</span>
+        <h2 class="section-title">Innovación en cada <span class="gradient-text">capa de protección</span></h2>
+      </div>
+      <div class="materials-grid">
+        <div class="material-card reveal">
+          <div class="material-temp">-18°C a 2°C</div>
+          <h3>Productos Congelados</h3>
+          <p>Espuma de poliuretano de alta densidad + paneles al vacío (VIP) + gel refrigerante con PCM. Para carnes, mariscos y frutas congeladas para exportación.</p>
+          <div class="material-tag">Máxima aislación</div>
+        </div>
+        <div class="material-card reveal">
+          <div class="material-temp">2°C a 8°C</div>
+          <h3>Refrigerados Sensibles</h3>
+          <p>Cajas EPS con paredes calibradas + packs de gel + sensores integrados. Para frutas tropicales, berries, espárragos, flores y hierbas aromáticas.</p>
+          <div class="material-tag">Control preciso</div>
+        </div>
+        <div class="material-card reveal">
+          <div class="material-temp">8°C a 15°C</div>
+          <h3>Climatizados</h3>
+          <p>Cartón corrugado parafinado con ventilación + liner térmico reflectivo. Para banano, cítricos, papa, tomate y aguacate en tránsito de corta y media distancia.</p>
+          <div class="material-tag">Ventilación optimizada</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIFRAS -->
+  <section class="section" id="cifras">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Impacto</span>
+        <h2 class="section-title">Resultados que <span class="gradient-text">hablan por sí solos</span></h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-icon">📦</div>
+          <div class="stat-number" data-count="2500">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Diseños de empaque desarrollados</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon">🌎</div>
+          <div class="stat-number" data-count="18">0</div>
+          <div class="stat-suffix"></div>
+          <div class="stat-label">Países de destino atendidos</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon">🌡️</div>
+          <div class="stat-number" data-count="40">0</div>
+          <div class="stat-suffix">%</div>
+          <div class="stat-label">Reducción de pérdidas postcosecha</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon">♻️</div>
+          <div class="stat-number" data-count="70">0</div>
+          <div class="stat-suffix">%</div>
+          <div class="stat-label">Materiales reciclables utilizados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>¿Listo para proteger tu cosecha?</h2>
+        <p>Cada hora sin cadena de frío reduce la vida útil de tus productos. Nuestro equipo de ingenieros está listo para diseñar la solución perfecta para tu operación.</p>
+        <a href="#contacto" class="btn btn-primary btn-lg">
+          Agendar consulta gratuita
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-4-4 4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section section-alt" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">Hablemos de tu <span class="gradient-text">próximo proyecto</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h4>Oficina Central</h4>
+              <p>Av. Industrial 2850, Parque Logístico Sur<br>Lima, Perú</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h4>Teléfono</h4>
+              <p>+51 (1) 456-7890<br>Lun - Vie: 8:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>contacto@coldpacklogistics.com<br>ventas@coldpacklogistics.com</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" placeholder="Juan Pérez" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="juan@empresa.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="product">Tipo de producto</label>
+            <select id="product" required>
+              <option value="" disabled selected>Seleccione el tipo de producto</option>
+              <option>Frutas frescas</option>
+              <option>Hortalizas y verduras</option>
+              <option>Flores y plantas</option>
+              <option>Productos congelados</option>
+              <option>Hierbas aromáticas</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Cuéntenos sobre su proyecto</label>
+            <textarea id="message" rows="4" placeholder="Describa brevemente su necesidad: volumen, producto, destino, etc." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Enviar solicitud
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-4-4 4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="10" fill="url(#logoGrad2)"/>
+              <path d="M12 28V16l8-6 8 6v12H12z" stroke="#fff" stroke-width="2" fill="none"/>
+              <path d="M20 14v8M16 18h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              <defs><linearGradient id="logoGrad2" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#0ea5e9"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+            </svg>
+            <span class="logo-text">Cold<strong>Pack</strong></span>
+          </a>
+          <p class="footer-desc">Especialistas en soluciones de empaque y cadena de frío para la industria agrícola. Protegemos lo que cosechas.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Empaques primarios</a></li>
+            <li><a href="#servicios">Embalajes especiales</a></li>
+            <li><a href="#servicios">Cadena de frío</a></li>
+            <li><a href="#servicios">Consultoría normativa</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#cifras">Impacto</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos de servicio</a></li>
+            <li><a href="#">Certificaciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ColdPack Logistics S.A.C. Todos los derechos reservados.</p>
+        <p class="footer-ref">Basado en principios de: Mendoza Roca, C. (2016). <em>Manual práctico para gestión logística.</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
