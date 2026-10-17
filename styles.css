@@ -991,8 +991,30 @@ ul {
   color: var(--sky-400);
 }
 
-.footer-bottom {
+.footer-academic {
+  text-align: center;
+  padding: 1.75rem 0;
+  margin-bottom: 1.5rem;
   border-top: 1px solid var(--slate-800);
+  border-bottom: 1px solid var(--slate-800);
+}
+
+.footer-student {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.footer-university {
+  font-size: 0.85rem;
+  color: var(--sky-400);
+  font-weight: 500;
+}
+
+.footer-bottom {
+  border-top: none;
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
